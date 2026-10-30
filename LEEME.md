@@ -1,4 +1,6 @@
-# Mapa y agenda · Caminos y Ecos de La Rioja 2027
+# Mapa y agenda · Caminos y Ecos de La Rioja
+
+Sirve para cualquier año: arriba eliges la **edición** o creas una nueva, empezando todo en pendiente o copiando los estados de la edición actual. Cada edición tiene sus propios estados, fechas, notas y fases de agenda, que se generan según el año y se pueden editar; incluye un aviso opcional de elecciones municipales. Los contactos y el patrimonio son comunes a todas las ediciones, y cada ficha muestra el historial por año. Los borradores usan el año de la edición activa. El CSV lleva la columna `edicion`.
 
 Dos formatos con el mismo contenido: 98 puntos (ayuntamientos, aldeas, asociaciones y Anguiano 2026), ficha editable, borradores de email y Facebook con botón de copiar, agenda de fases, alta de pueblos con un clic en el mapa, y exportación/importación en CSV.
 
@@ -27,7 +29,7 @@ Una PWA solo se instala si se sirve por **https**. Primero hay que alojarla (es 
 ⚠️ **Privacidad:** la app contiene los contactos y los borradores, y quien tenga el enlace podrá verlos. Las anotaciones (estados y notas) no se suben a ningún sitio: se quedan en cada dispositivo. En GitHub Pages gratuito el repositorio es público; para que no aparezca en buscadores, usa Netlify o no compartas el enlace.
 
 ### Instalarla
-- **Ordenador (Chrome o Edge):** abre la dirección https y pulsa el icono de instalar en la barra de direcciones (⊕ o pantalla con flecha), o *Menú ⋮ → Instalar Caminos y Ecos…*.
+- **Ordenador (Chrome o Edge):** abre la dirección https y pulsa el icono de instalar en la barra de direcciones (⊕ o pantalla con flecha), o *Menú ⋮ → Instalar Caminos y Ecos*.
 - **Android (Chrome):** abre la dirección, *Menú ⋮ → Instalar aplicación* (o *Añadir a pantalla de inicio*).
 - **iPhone/iPad (Safari):** abre la dirección en Safari, pulsa *Compartir* (cuadrado con flecha) y luego *Añadir a pantalla de inicio*.
 

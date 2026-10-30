@@ -21,10 +21,10 @@ Una PWA solo se instala si se sirve por **https**. Primero hay que alojarla (es 
 4. Te da una dirección `https://….netlify.app`. Crea una cuenta gratuita para que no caduque.
 
 **Opción B · GitHub Pages:**
-1. Crea un repositorio en GitHub (por ejemplo `celr2027`).
+1. Crea un repositorio en GitHub (por ejemplo `caminos-y-ecos-mapa`).
 2. Sube el contenido de la carpeta (`index.html`, `manifest.webmanifest`, `sw.js`, `icons/`).
 3. Ve a *Settings → Pages → Branch: main / (root) → Save*.
-4. La app quedará en `https://TU_USUARIO.github.io/celr2027/`.
+4. La app quedará en `https://TU_USUARIO.github.io/caminos-y-ecos-mapa/`.
 
 ⚠️ **Privacidad:** la app contiene los contactos y los borradores, y quien tenga el enlace podrá verlos. Las anotaciones (estados y notas) no se suben a ningún sitio: se quedan en cada dispositivo. En GitHub Pages gratuito el repositorio es público; para que no aparezca en buscadores, usa Netlify o no compartas el enlace.
 

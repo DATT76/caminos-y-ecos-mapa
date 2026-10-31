@@ -41,3 +41,12 @@ Una vez abierta la primera vez, la app funciona sin conexión.
 - *Copiar texto* usa el portapapeles. En el HTML abierto con doble clic, si el navegador no lo permite, el texto se selecciona para copiarlo con Ctrl+C.
 
 Nada se envía automáticamente: los emails se copian y se envían a mano.
+
+## Enviar con un clic (Proton Mail)
+Cada ficha con borrador tiene el botón **«✉️ Abrir en correo para enviar»**. Abre tu app de correo predeterminada con el destinatario, el CC si lo hay (carta de Soto), el asunto y el texto de la edición activa. **No envía nada**: revisas el email y pulsas Enviar tú. Los emails largos se copian además al portapapeles por si el cuerpo llega cortado. Después la app pregunta si quieres marcar la ficha como «email enviado» con la fecha de hoy. Si no hay email de destinatario, el botón aparece desactivado.
+
+**Proton Mail como app de correo predeterminada**
+- **iPad/iPhone:** instala la app *Proton Mail* desde el App Store e inicia sesión. Ve a *Ajustes › Apps › Proton Mail › App de correo predeterminada* (en versiones anteriores de iPadOS: *Ajustes › Proton Mail*) y elige Proton Mail. Si no aparece la opción, usa «Copiar texto» y pégalo en la app.
+- **Windows:** instala la app de escritorio *Proton Mail* y ve a *Configuración › Aplicaciones › Aplicaciones predeterminadas*; busca «MAILTO» y elige Proton Mail.
+- **macOS:** instala la app de escritorio *Proton Mail*; en la app *Mail › Ajustes › General › Lector de correo predeterminado* elige Proton Mail.
+- Si usas Proton Mail solo en el navegador, puede que el enlace no lo abra: usa «Copiar texto».

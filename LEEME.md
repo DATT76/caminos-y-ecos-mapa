@@ -50,3 +50,7 @@ Cada ficha con borrador tiene el botón **«✉️ Abrir en correo para enviar»
 - **Windows:** instala la app de escritorio *Proton Mail* y ve a *Configuración › Aplicaciones › Aplicaciones predeterminadas*; busca «MAILTO» y elige Proton Mail.
 - **macOS:** instala la app de escritorio *Proton Mail*; en la app *Mail › Ajustes › General › Lector de correo predeterminado* elige Proton Mail.
 - Si usas Proton Mail solo en el navegador, puede que el enlace no lo abra: usa «Copiar texto».
+
+## Pestaña «Envíos» y modo oscuro (v5)
+- **Envíos** (por edición): lotes por día (Lote 1 lun 2 nov: 10 + 2 extra; reparto 3–13 nov) y lista «Esperan a resolver» con su motivo. Por cada correo: Para/CC, asunto, avisos, «Ver/editar borrador» (se guarda solo en la edición activa; «Restaurar original» recupera el texto), «✉️ Abrir en correo para enviar» (usa el texto editado y lo copia al portapapeles), casilla «enviado» con fecha (pone la ficha en «email enviado»), mover a otro día, quitar, y crear días nuevos. Desde cada ficha: «Añadir a lote» y enlaces a sus lotes.
+- **Modo claro/oscuro**: botón 🌙/☀️ en la cabecera. Por defecto sigue el sistema; tu elección se recuerda en este navegador.

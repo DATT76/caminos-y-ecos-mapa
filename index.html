@@ -217,5 +217,5 @@ function setThemeBtn(){const d=document.documentElement.getAttribute("data-theme
 $("thm").onclick=()=>{const d=document.documentElement.getAttribute("data-theme")==="dark"?"light":"dark";document.documentElement.setAttribute("data-theme",d);try{localStorage.setItem("celr_theme",d);}catch(e){}setThemeBtn();};
 matchMedia("(prefers-color-scheme: dark)").addEventListener("change",e=>{let t=null;try{t=localStorage.getItem("celr_theme")}catch(x){}if(!t){document.documentElement.setAttribute("data-theme",e.matches?"dark":"light");setThemeBtn();}});
 setThemeBtn();applySeeds();renderAll(true);if(migrated)msg("Datos anteriores migrados a la edición 2027.");
-if("serviceWorker" in navigator&&location.protocol!=="file:")navigator.serviceWorker.register("sw.js");
+if("serviceWorker" in navigator&&location.protocol!=="file:"){navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).then(g=>g.update());let rl=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(rl)return;rl=true;location.reload();});}
 </script></body></html>

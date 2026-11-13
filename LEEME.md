@@ -54,3 +54,12 @@ Cada ficha con borrador tiene el botón **«✉️ Abrir en correo para enviar»
 ## Pestaña «Envíos» y modo oscuro (v5)
 - **Envíos** (por edición): lotes por día (Lote 1 lun 2 nov: 10 + 2 extra; reparto 3–13 nov) y lista «Esperan a resolver» con su motivo. Por cada correo: Para/CC, asunto, avisos, «Ver/editar borrador» (se guarda solo en la edición activa; «Restaurar original» recupera el texto), «✉️ Abrir en correo para enviar» (usa el texto editado y lo copia al portapapeles), casilla «enviado» con fecha (pone la ficha en «email enviado»), mover a otro día, quitar, y crear días nuevos. Desde cada ficha: «Añadir a lote» y enlaces a sus lotes.
 - **Modo claro/oscuro**: botón 🌙/☀️ en la cabecera. Por defecto sigue el sistema; tu elección se recuerda en este navegador.
+
+## Calendario reprogramado · versión celr-v9
+Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de enero. Al actualizar se trasladan también los lotes guardados de la edición 2027, sin cambiar enviados, borradores editados ni notas. Abre con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Correo contacto@caminosyecosdelarioja.com · versión celr-v10
+- **Sección «📬 Correo»** (accesible desde la barra superior, con el número de no leídos): inicia sesión con la contraseña del webmail del proyecto. Si aún no existe, primero hay que crearla en https://celr-mail.caminosyecosdelarioja.workers.dev/setup. Dentro: uso de hoy y del mes (límites 100/3000), carpetas (Recibidos, Enviados, Destacados, Archivados, Papelera, Todos), búsqueda y filtro por municipio, lectura de hilos con adjuntos, destacar, archivar, papelera, marcar no leído, vincular un hilo a un municipio y verlo en el mapa, respuesta rápida, «Redactar nuevo» y «Ajustes» (nombre del remitente, reenvío, firma y cambio de contraseña).
+- **«📤 Enviar desde contacto@…»** en cada ficha y en cada fila de «Envíos»: muestra antes una confirmación con remitente, destinatarios (si hay varios emails puedes elegir), asunto, avisos y texto. Al confirmarse el envío, el correo queda marcado como enviado en el lote y la ficha pasa a «email enviado» con la fecha de hoy. Si no has iniciado sesión, te lleva a la sección Correo y, al entrar, vuelve a abrir la confirmación: el borrador no se pierde.
+- **«✉️ Abrir en Proton / app de correo»** sigue disponible como alternativa (no envía nada por sí solo).
+- La sesión del correo se guarda solo en ese dispositivo, aparte de los datos del mapa: no se incluye al exportar el CSV ni se borra con «Restablecer todo». «Cerrar sesión» la elimina.

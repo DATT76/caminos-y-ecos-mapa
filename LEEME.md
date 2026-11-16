@@ -63,3 +63,11 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - **«📤 Enviar desde contacto@…»** en cada ficha y en cada fila de «Envíos»: muestra antes una confirmación con remitente, destinatarios (si hay varios emails puedes elegir), asunto, avisos y texto. Al confirmarse el envío, el correo queda marcado como enviado en el lote y la ficha pasa a «email enviado» con la fecha de hoy. Si no has iniciado sesión, te lleva a la sección Correo y, al entrar, vuelve a abrir la confirmación: el borrador no se pierde.
 - **«✉️ Abrir en Proton / app de correo»** sigue disponible como alternativa (no envía nada por sí solo).
 - La sesión del correo se guarda solo en ese dispositivo, aparte de los datos del mapa: no se incluye al exportar el CSV ni se borra con «Restablecer todo». «Cerrar sesión» la elimina.
+
+## Segundo buzón director@caminosyecosdelarioja.com · versión celr-v11
+- **Selector de buzón** en la sección Correo: *Todos / Contacto / Director* (se recuerda en ese dispositivo, aparte de los datos del mapa). La lista, la búsqueda, el filtro por municipio y los contadores de carpetas se filtran por el buzón elegido; en «Todos» cada correo lleva una etiqueta con su buzón. El número de no leídos de la barra superior es siempre la suma de los dos buzones, y el uso diario/mensual (100/3000) es compartido.
+- **Hilos**: se indica a qué buzón pertenecen; la respuesta rápida sale por defecto de ese buzón y con su firma (se puede cambiar en «De»).
+- **Redactar nuevo**: campo «De» (Contacto / Director). Por defecto el buzón seleccionado, o contacto si estás en «Todos». La firma cambia con el «De».
+- **Ajustes**: elige el buzón para editar su nombre de remitente, firma y reenvío. La contraseña es común a los dos.
+- **«📤 Enviar desde la app»** (antes «Enviar desde contacto@…») en fichas y en «Envíos»: la confirmación incluye «De»; los borradores de campaña salen por defecto desde contacto@, pero puedes elegir director@. El texto del borrador no cambia (lleva su propia firma).
+- Si el servidor de correo aún no tuviera el segundo buzón, la app sigue funcionando como antes, solo con contacto@.

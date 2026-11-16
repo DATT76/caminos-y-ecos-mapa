@@ -71,3 +71,10 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - **Ajustes**: elige el buzón para editar su nombre de remitente, firma y reenvío. La contraseña es común a los dos.
 - **«📤 Enviar desde la app»** (antes «Enviar desde contacto@…») en fichas y en «Envíos»: la confirmación incluye «De»; los borradores de campaña salen por defecto desde contacto@, pero puedes elegir director@. El texto del borrador no cambia (lleva su propia firma).
 - Si el servidor de correo aún no tuviera el segundo buzón, la app sigue funcionando como antes, solo con contacto@.
+
+## Firmas de Director y Contacto · versión celr-v12
+- **Borradores de campaña** (lotes, fichas, carta conjunta de Soto, reenganche de Ábalos y Agoncillo, mensajes a asociaciones): firmados por Daniel Torres Tear con **director@caminosyecosdelarioja.com** · 621 38 83 46. En los mensajes de Facebook, el contacto de Daniel también es director@. Los enlaces «✉️ Abrir en Proton / app de correo» llevan esa misma firma.
+- **Contacto** firma como «Un cordial saludo, / Equipo de comunicación / Caminos y Ecos de La Rioja · Música y Patrimonio / contacto@caminosyecosdelarioja.com · 621 38 83 46».
+- **«📤 Enviar desde la app»** en fichas y en «Envíos»: «De» es **Director** por defecto. Si eliges Contacto, el bloque de firma del texto cambia solo a «Equipo de comunicación · contacto@» (y vuelve a Daniel · director@ si eliges Director). Si el texto no lleva firma, no se añade ninguna.
+- **Redactar nuevo y respuesta rápida**: si un buzón no tiene firma guardada en «Ajustes», se usa su firma predeterminada (Director: Daniel · director@; Contacto: Equipo de comunicación · contacto@). Si la tiene, se usa la guardada.
+- Al abrir esta versión, los borradores que ya habías editado y guardado en el dispositivo cambian la firma antigua (Daniel con contacto@) por la de director@. Tus notas, lo marcado como enviado y el resto del texto no cambian.

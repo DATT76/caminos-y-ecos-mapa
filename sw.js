@@ -1,4 +1,7 @@
-const C="celr-v12";const F=["./","./index.html","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./icons/apple-touch-icon.png"];
+const C="celr-v13";const F=["./","./index.html","./manifest.webmanifest","./icons/icon-192.png","./icons/icon-512.png","./icons/icon-maskable-512.png","./icons/apple-touch-icon.png"];
 self.addEventListener("install",e=>{e.waitUntil(caches.open(C).then(c=>c.addAll(F.map(u=>new Request(u,{cache:"reload"})))));self.skipWaiting();});
 self.addEventListener("activate",e=>{e.waitUntil(caches.keys().then(k=>Promise.all(k.filter(x=>x!==C).map(x=>caches.delete(x)))).then(()=>self.clients.claim()));});
 self.addEventListener("fetch",e=>{const r=e.request;if(r.method!=="GET"||new URL(r.url).origin!==self.location.origin)return;const nav=r.mode==="navigate"||r.url.endsWith("/")||r.url.includes("index.html");if(nav){e.respondWith(fetch(r,{cache:"no-store"}).then(res=>{const cp=res.clone();caches.open(C).then(c=>c.put("./index.html",cp));return res;}).catch(()=>caches.match("./index.html")));return;}e.respondWith(caches.match(r,{ignoreSearch:true}).then(x=>x||fetch(r)));});
+function setBadge(n){n=+n||0;try{const r=self.registration;if(!r)return;if(n>0&&typeof r.setAppBadge==="function"){const p=r.setAppBadge(n);if(p&&p.catch)p.catch(()=>{});}else if(typeof r.clearAppBadge==="function"){const p=r.clearAppBadge();if(p&&p.catch)p.catch(()=>{});}}catch(e){}}
+self.addEventListener("message",e=>{const d=e.data||{};if(d.type==="celr-badge")setBadge(d.n);});
+self.addEventListener("periodicsync",e=>{if(e.tag!=="celr-mail-badge")return;e.waitUntil(self.clients.matchAll({type:"window",includeUncontrolled:true}).then(cs=>cs.forEach(c=>c.postMessage({type:"celr-badge-refresh"}))));});

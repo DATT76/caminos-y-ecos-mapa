@@ -78,3 +78,9 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - **«📤 Enviar desde la app»** en fichas y en «Envíos»: «De» es **Director** por defecto. Si eliges Contacto, el bloque de firma del texto cambia solo a «Equipo de comunicación · contacto@» (y vuelve a Daniel · director@ si eliges Director). Si el texto no lleva firma, no se añade ninguna.
 - **Redactar nuevo y respuesta rápida**: si un buzón no tiene firma guardada en «Ajustes», se usa su firma predeterminada (Director: Daniel · director@; Contacto: Equipo de comunicación · contacto@). Si la tiene, se usa la guardada.
 - Al abrir esta versión, los borradores que ya habías editado y guardado en el dispositivo cambian la firma antigua (Daniel con contacto@) por la de director@. Tus notas, lo marcado como enviado y el resto del texto no cambian.
+
+## Número en el icono (correos no leídos) · versión celr-v13
+- Con la app **instalada** (iPad: Añadir a pantalla de inicio; ordenador: Instalar en Chrome o Edge), el icono muestra el número de correos **no leídos de los dos buzones** (contacto@ y director@), aunque en la sección Correo estés viendo solo uno.
+- El número se actualiza al abrir la app (si hay sesión), al refrescar la bandeja, al leer un correo, cada dos minutos mientras la app está abierta, y al volver a ella.
+- **iPad (iPadOS 16.4 o posterior):** el número solo aparece si concedes el permiso de notificaciones. En **Ajustes** del correo hay un botón **«Activar número en el icono»**. En el ordenador, con la app instalada en Chrome o Edge, suele bastar con eso.
+- Con la app cerrada, el número se actualiza al volver a abrirla. Una actualización en segundo plano real requeriría notificaciones push desde el servidor.

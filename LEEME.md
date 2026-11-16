@@ -90,3 +90,11 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - Si el permiso ya estaba concedido, al iniciar sesión la app vuelve a registrar el dispositivo en silencio, sin volver a pedir permiso. Al cerrar sesión se da de baja la suscripción.
 - El icono sigue mostrando la suma de no leídos de Director y Contacto. Un aviso de solo número no muestra notificación (en el iPad, Safari exige un aviso visible; el servidor envía «Nuevo correo» a esos dispositivos). Pulsar el aviso abre la sección Correo. También puedes abrir la app con `#correo`.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Ventana de correo en paralelo · versión celr-v15
+- En la cabecera de **Correo** aparece **«⧉ Abrir en ventana aparte»**. En el ordenador (Chrome o Edge, también con la app instalada) abre una ventana solo con el correo (bandeja, hilo, redactar, respuesta rápida, ajustes y selector de buzón), para tenerla al lado de la app mientras escribes o envías. Si la ventana ya estaba abierta, se reutiliza y se trae al frente. Si el navegador bloquea la ventana, se intenta en una pestaña nueva o se muestra un aviso.
+- En esa ventana, **«Volver a la app»** enfoca la ventana principal o la abre. El título es «Correo · Caminos y Ecos».
+- Lo que envíes o marques como leído en una ventana se refleja en la otra (bandeja, contadores y, si era un borrador de lote, el marcado de enviado en Envíos y en la ficha). Iniciar o cerrar sesión en una también se nota en la otra.
+- En el diálogo **«📤 Enviar desde la app»** hay un enlace **«Abrir en la ventana de correo»**: pasa el borrador (para, asunto, texto, De, municipio) a la ventana despegada, abre Redactar ya relleno y, al enviarlo, el lote sigue quedando marcado como enviado. El botón de enviar de la ficha y de Envíos funciona igual que antes.
+- **iPad:** una PWA instalada no puede abrir una segunda ventana propia (se iría a Safari, con otra sesión y otros datos). En el iPad, con la app en la pantalla de inicio, el botón no abre nada y avisa: «En iPad usa la vista dividida con Safari».
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

@@ -82,5 +82,11 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 ## Número en el icono (correos no leídos) · versión celr-v13
 - Con la app **instalada** (iPad: Añadir a pantalla de inicio; ordenador: Instalar en Chrome o Edge), el icono muestra el número de correos **no leídos de los dos buzones** (contacto@ y director@), aunque en la sección Correo estés viendo solo uno.
 - El número se actualiza al abrir la app (si hay sesión), al refrescar la bandeja, al leer un correo, cada dos minutos mientras la app está abierta, y al volver a ella.
-- **iPad (iPadOS 16.4 o posterior):** el número solo aparece si concedes el permiso de notificaciones. En **Ajustes** del correo hay un botón **«Activar número en el icono»**. En el ordenador, con la app instalada en Chrome o Edge, suele bastar con eso.
-- Con la app cerrada, el número se actualiza al volver a abrirla. Una actualización en segundo plano real requeriría notificaciones push desde el servidor.
+- **iPad (iPadOS 16.4 o posterior):** el número solo aparece si concedes el permiso de notificaciones. En **Ajustes** del correo hay un botón **«Activar número en el icono»** (en v14 pasa a «Activar avisos y número en el icono»). En el ordenador, con la app instalada en Chrome o Edge, suele bastar con eso.
+- Con la app cerrada, el número se actualiza al volver a abrirla. Desde v14, si activas los avisos, también puede actualizarse cuando llega un correo nuevo.
+
+## Avisos push y número en el icono · versión celr-v14
+- En **Ajustes** del correo, el botón **«Activar avisos y número en el icono»** pide el permiso de notificaciones, registra el dispositivo en el servidor de correo y deja listo el aviso «Nuevo correo» (o el asunto que envíe el servidor) aunque la app esté cerrada. El estado visible puede ser «Avisos activados», «Permiso denegado», «No compatible (instala la app en el iPad)» o «Servidor aún sin avisos» si el servidor aún no responde. **«Desactivar avisos»** cancela el registro en este dispositivo.
+- Si el permiso ya estaba concedido, al iniciar sesión la app vuelve a registrar el dispositivo en silencio, sin volver a pedir permiso. Al cerrar sesión se da de baja la suscripción.
+- El icono sigue mostrando la suma de no leídos de Director y Contacto. Un aviso de solo número no muestra notificación (en el iPad, Safari exige un aviso visible; el servidor envía «Nuevo correo» a esos dispositivos). Pulsar el aviso abre la sección Correo. También puedes abrir la app con `#correo`.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

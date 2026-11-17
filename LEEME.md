@@ -98,3 +98,11 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - En el diálogo **«📤 Enviar desde la app»** hay un enlace **«Abrir en la ventana de correo»**: pasa el borrador (para, asunto, texto, De, municipio) a la ventana despegada, abre Redactar ya relleno y, al enviarlo, el lote sigue quedando marcado como enviado. El botón de enviar de la ficha y de Envíos funciona igual que antes.
 - **iPad:** una PWA instalada no puede abrir una segunda ventana propia (se iría a Safari, con otra sesión y otros datos). En el iPad, con la app en la pantalla de inicio, el botón no abre nada y avisa: «En iPad usa la vista dividida con Safari».
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Cuatro buzones · versión celr-v16
+- La app muestra todos los buzones que devuelve el servidor. Además de Contacto y Director, aparecen **Promoción** (promocion@) y **Producción** (produccion@). Si más adelante hay otros, salen también, con el identificador capitalizado si no tienen etiqueta propia.
+- El selector, el «De» al redactar o responder, los ajustes y las etiquetas de cada fila cubren todos los buzones. En **Envíos**, el remitente por defecto sigue siendo Director (los borradores van firmados por Daniel).
+- Si un mismo correo llega a varios buzones, en la vista **«Todos»** se agrupa en una sola fila con varias etiquetas.
+- El número del icono suma los no leídos de todos los buzones. El aviso «Nuevo correo» indica el buzón (Contacto, Director, Promoción o Producción).
+- Firmas predeterminadas (si el servidor no tiene una guardada): Director = Daniel Torres Tear · director@; Contacto = Equipo de comunicación · contacto@; Promoción = Equipo de promoción · promocion@; Producción = Equipo de producción · produccion@. Las de Promoción y Producción son provisionales.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

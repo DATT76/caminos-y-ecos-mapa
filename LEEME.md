@@ -106,3 +106,9 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - El número del icono suma los no leídos de todos los buzones. El aviso «Nuevo correo» indica el buzón (Contacto, Director, Promoción o Producción).
 - Firmas predeterminadas (si el servidor no tiene una guardada): Director = Daniel Torres Tear · director@; Contacto = Equipo de comunicación · contacto@; Promoción = Equipo de promoción · promocion@; Producción = Equipo de producción · produccion@. Las de Promoción y Producción son provisionales.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Correos no leídos resaltados · versión celr-v17
+- En la bandeja, los correos **recibidos y no leídos** tienen un fondo ámbar claro (**#FFF3D6**; en modo oscuro, un ámbar oscuro **#3D2A12**), un borde izquierdo grueso en el color de acento, el remitente y el asunto en negrita y un punto indicador. Si el hilo tiene varios no leídos, aparece el número.
+- Los ya leídos y los enviados no se resaltan. Vale también en la ventana de solo correo (`?vista=correo`) y en la vista «Todos» (agrupada por resend_id).
+- Al abrir un hilo, la fila pierde el resaltado al momento (también se sincroniza con la otra ventana). En el hilo puedes pulsar **«Marcar como no leído»** para volver a destacarlo en la lista.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

@@ -120,3 +120,10 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - La selección se borra al cambiar de carpeta, de buzón o de búsqueda. Si un mismo correo aparece agrupado en «Todos» (varios buzones), se mueve en todos ellos.
 - Las filas seleccionadas tienen un fondo azulado distinto del ámbar de los no leídos, y un borde derecho; si además están no leídas, se conservan el fondo cálido, el borde izquierdo y la negrita.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Seis buzones y colores · versión celr-v20
+- Se añaden **Suscripción** (suscripcion@caminosyecosdelarioja.com) e **Info** (info@caminosyecosdelarioja.com), junto a Contacto, Director, Promoción y Producción. El selector, el «De», los ajustes, las etiquetas y los avisos cubren los seis. En **Envíos**, el remitente por defecto sigue siendo Director.
+- Firmas predeterminadas de Suscripción e Info (provisionales): Equipo de suscripciones · suscripcion@; Equipo de información · info@.
+- Cada buzón tiene un color de fondo en la lista, en el filtro de Buzón y en las etiquetas, con una leyenda debajo. Los no leídos mantienen el borde granate de 4 px, la negrita y el punto, con un tono más intenso del mismo color. La fila seleccionada se distingue por un borde y un velo, sin tapar el color del buzón. Si un mismo correo llega a varios, en «Todos» el fondo combina esos colores.
+- Si el servidor aún no conoce los buzones nuevos, no aparecen en el selector; si faltan en las estadísticas, el recuento se muestra como 0 y la app no se interrumpe.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

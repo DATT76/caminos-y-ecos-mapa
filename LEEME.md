@@ -134,3 +134,11 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - **«✉️ Escribir a los activos»** abre el redactado desde suscripcion@, con las direcciones activas en **CCO**, y no envía nada hasta que confirmes. El campo CCO se ha añadido al redactado (el servidor ya lo admitía).
 - Si aún no hay suscriptores: «Todavía no hay suscriptores. El formulario de la web se activará cuando se publique.» Si el servidor no tiene el listado, se muestra un aviso claro, sin interrumpir la app.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Boletín a suscriptores · versión celr-v22
+- En **👥 Suscriptores**, el botón **«✉️ Escribir al boletín»** abre un redactado específico (sin Para ni CCO). Cada suscriptor recibe su propio correo, con su enlace de baja personal, que exige la LSSI y el RGPD.
+- Debajo del texto aparece el **pie legal** (solo lectura), que el servidor añade automáticamente a cada envío. El enlace «darte de baja aquí» se ve como enlace, pero en la vista previa no da de baja a nadie.
+- Botones: **«Comprobar cupo»** (no envía: muestra destinatarios y envíos que quedan hoy y este mes), **«Enviar prueba a un suscriptor»** (pide el email; solo llega a ese activo) y **«Enviar a los N activos»** (pide confirmación con el número; primero comprueba el cupo y, si se superaría, no envía). Nada se envía al abrir ni al guardar, ni si falta el asunto.
+- Tras un envío se muestra el resultado (enviados y fallidos) y se abre la carpeta **Enviados** de suscripcion@. En Bajas, si el servidor informa la fecha, se ve «Baja el dd/mm/aaaa»; el CSV incluye la columna `unsubscribed_at`.
+- El redactado normal (con campo CCO) no cambia.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

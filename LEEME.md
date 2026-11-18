@@ -127,3 +127,10 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - Cada buzón tiene un color de fondo en la lista, en el filtro de Buzón y en las etiquetas, con una leyenda debajo. Los no leídos mantienen el borde granate de 4 px, la negrita y el punto, con un tono más intenso del mismo color. La fila seleccionada se distingue por un borde y un velo, sin tapar el color del buzón. Si un mismo correo llega a varios, en «Todos» el fondo combina esos colores.
 - Si el servidor aún no conoce los buzones nuevos, no aparecen en el selector; si faltan en las estadísticas, el recuento se muestra como 0 y la app no se interrumpe.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Listado de suscriptores · versión celr-v21
+- En **Correo** hay un botón **«👥 Suscriptores»** (también en la ventana de solo correo). Muestra el total y los activos, se puede buscar, y filtrar por Activos, Bajas o Todos.
+- La tabla incluye email, nombre, fecha de alta, origen y estado. **«Dar de baja»** pide confirmación y no borra el registro (pasa a Baja). **«⬇️ Exportar CSV»** descarga la lista filtrada (UTF-8 con BOM, separador «;»).
+- **«✉️ Escribir a los activos»** abre el redactado desde suscripcion@, con las direcciones activas en **CCO**, y no envía nada hasta que confirmes. El campo CCO se ha añadido al redactado (el servidor ya lo admitía).
+- Si aún no hay suscriptores: «Todavía no hay suscriptores. El formulario de la web se activará cuando se publique.» Si el servidor no tiene el listado, se muestra un aviso claro, sin interrumpir la app.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

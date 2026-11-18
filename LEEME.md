@@ -112,3 +112,11 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - Los ya leídos y los enviados no se resaltan. Vale también en la ventana de solo correo (`?vista=correo`) y en la vista «Todos» (agrupada por resend_id).
 - Al abrir un hilo, la fila pierde el resaltado al momento (también se sincroniza con la otra ventana). En el hilo puedes pulsar **«Marcar como no leído»** para volver a destacarlo en la lista.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Selección de correos y envío a la papelera · versión celr-v19
+- En la bandeja de **Correo** cada fila tiene una casilla para **seleccionar el correo sin abrirlo**. Arriba hay «Seleccionar todo», el recuento y el botón **«🗑️ Enviar a la papelera»** (se activa al marcar alguno). No pide confirmación: el envío a la papelera se puede deshacer.
+- Tras moverlos aparece el aviso («3 correos movidos a la papelera») con un enlace **Deshacer**, que los devuelve a la carpeta en la que estaban.
+- En la **Papelera**, el mismo botón pasa a **«↩️ Devolver a Recibidos»**. No hay borrado definitivo por lotes (sigue estando solo al abrir un hilo).
+- La selección se borra al cambiar de carpeta, de buzón o de búsqueda. Si un mismo correo aparece agrupado en «Todos» (varios buzones), se mueve en todos ellos.
+- Las filas seleccionadas tienen un fondo azulado distinto del ámbar de los no leídos, y un borde derecho; si además están no leídas, se conservan el fondo cálido, el borde izquierdo y la negrita.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

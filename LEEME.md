@@ -154,3 +154,12 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - Al cambiar el buzón, `cambiaFirma` sustituye la firma y deja el aviso una sola vez. Al copiar, abrir en Proton, enviar o pasar el borrador a la ventana de correo, no se duplica.
 - Si tenías un borrador guardado sin el aviso, se añade solo al final y solo si falta; los mensajes de Facebook y las ediciones que no llevan firma no se tocan.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Eliminar definitivamente en la Papelera · versión celr-v25
+- En la carpeta **Papelera** de Correo, al seleccionar correos con las casillas aparece el botón rojo **🗑️ Eliminar definitivamente**, junto a «Devolver a Recibidos».
+- Pide confirmación («¿Eliminar definitivamente N correos? No se puede deshacer.») y borra esos mensajes para siempre con `DELETE /api/emails/<id>`. No hay Deshacer.
+- Si una fila está agrupada (mismo correo en varios buzones), se borran todos sus identificadores. El botón se desactiva mientras borra, muestra el resultado, refresca la lista y los contadores, y limpia la selección.
+- También hay **Vaciar papelera**, con su propia confirmación, para borrar todos los correos visibles de la papelera en el buzón o filtro actual.
+- Fuera de la Papelera nada cambia.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+

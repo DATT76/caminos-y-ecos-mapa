@@ -148,3 +148,9 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - Al cambiar el «De», la firma y el aviso se sustituyen juntos, sin duplicarse. En las respuestas queda después de la firma y antes de la cita del mensaje original. En el boletín va debajo de «Equipo de suscripciones»; el pie de baja que añade el servidor no se modifica.
 - Si el envío va en HTML (el boletín), los títulos «AVISO LEGAL.» y «CONFIDENCIALIDAD.» van en negrita y el bloque en gris, con letra algo menor.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Aviso legal en los borradores de Envíos · versión celr-v24
+- Los **borradores de campaña** de la sección Envíos (ayuntamientos, asociaciones, carta de Soto, reenganche) llevan también el pie de **aviso legal** debajo de la firma, separado por «——», igual que al redactar desde Correo.
+- Al cambiar el buzón, `cambiaFirma` sustituye la firma y deja el aviso una sola vez. Al copiar, abrir en Proton, enviar o pasar el borrador a la ventana de correo, no se duplica.
+- Si tenías un borrador guardado sin el aviso, se añade solo al final y solo si falta; los mensajes de Facebook y las ediciones que no llevan firma no se tocan.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

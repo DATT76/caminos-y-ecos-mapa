@@ -163,3 +163,11 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - Fuera de la Papelera nada cambia.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
 
+## Agenda de teléfonos, preferencia de envío y canal de WhatsApp · versión celr-v26
+- Nueva sección **📇 Agenda** (distinta de la 📅 Agenda de fechas de la campaña): guarda contactos con nombre, teléfono, organización/pueblo, categoría (Ayuntamiento, Venue, Patrocinador, Festival, Músico, Prensa, Otro) y notas.
+- El teléfono de 9 cifras se normaliza a +34. En cada ficha hay **📞 Llamar** (`tel:`) y **💬 WhatsApp** (`wa.me`). Se puede buscar, filtrar por categoría, editar y borrar (el borrado pide confirmación).
+- **Exportar / importar CSV** propio de la agenda, y también va en el CSV general de la app (bloque `#agenda`). Se guarda en este navegador, junto al resto de datos; «Restablecer todo» también borra los contactos.
+- En **👥 Suscriptores**, cada persona tiene preferencia de recepción (**Correo**, **WhatsApp** o **Ambos**, por defecto Correo) y un teléfono opcional, guardados en este dispositivo e indexados por email. Si el servidor ya trae canal o teléfono, se respeta y no se sobrescribe. Hay contadores Correo / WhatsApp / Ambos; el CSV incluye esas columnas.
+- Ajuste **Enlace del Canal de WhatsApp**, también en este dispositivo (editable). El valor predeterminado es el canal de Caminos y Ecos: `https://whatsapp.com/channel/0029VbEQ1nMIN9iguGT5dz3H`. Debe empezar por `https://whatsapp.com/channel/` (también se admite `www.`). Si dejas el campo vacío y guardas, se restaura ese enlace.
+- En **✉️ Escribir al boletín**, el botón **📢 Publicar en el canal** copia al portapapeles el asunto y el cuerpo en texto plano, **sin** el aviso legal del correo ni el pie de baja de email, y añade: «Para dejar de recibir estas publicaciones, pulsa “Dejar de seguir” en este canal.» Luego abre el enlace del canal. Si aún no está configurado, avisa. El envío por correo no cambia: llega a todos los activos; en esta versión no se filtra por preferencia (queda dicho en la confirmación y en el informe).
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

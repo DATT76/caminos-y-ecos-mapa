@@ -9,7 +9,12 @@
 *{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--tx)}
 header{padding:14px 20px;background:var(--hd);color:#fff;position:relative}#thm{position:absolute;right:16px;top:14px;background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.4);font-size:16px}header h1{margin:0;font-size:20px}header p{margin:4px 0 0;font-size:13px;opacity:.9}
 main{padding:14px;display:grid;gap:14px;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr)}
-@media(max-width:900px){main{grid-template-columns:1fr}}
+@media(max-width:900px){main{grid-template-columns:minmax(0,1fr)}}
+/* v32 · ancho: nada se sale por la derecha */
+main>*{min-width:0;max-width:100%}.card{min-width:0;overflow-wrap:anywhere}.row>*,.chips>*{min-width:0;max-width:100%}img,svg,video,iframe,input,select,textarea{max-width:100%}
+table{display:block;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch}table th,table td{overflow-wrap:normal;word-break:normal}
+header h1,header p{padding-right:46px}main #est{flex-wrap:wrap;overflow-x:visible}main #est .chip{flex:1 1 auto;min-width:auto}
+@media(max-width:600px){#env table,#env tbody{display:block}#env tr:has(>th){display:none}#env tr.envrow,#env tr.edrow{display:block;padding:8px 0;border-bottom:1px solid var(--bd)}#env tr.envrow>td,#env tr.edrow>td{display:block;border:0;padding:3px 0;white-space:normal!important}#env tr.envrow>td:nth-child(-n+3){overflow-wrap:anywhere}#env tr.envrow>td:nth-child(5) label{display:inline-flex;flex-wrap:nowrap;white-space:nowrap;max-width:100%}#env tr.envrow>td:nth-child(5) select{flex:1 1 auto;min-width:0;width:auto}#env tr.envrow>td:nth-child(2)::before{content:"Para / CC: ";color:var(--mu);font-size:12px}#env tr.envrow>td:nth-child(3)::before{content:"Asunto: ";color:var(--mu);font-size:12px}#env tr.envrow>td:nth-child(4)::before{content:"Avisos: ";color:var(--mu)}#env tr.envrow>td:nth-child(6)::before{content:"Enviado: ";color:var(--mu);font-size:12px}#env tr.envrow>td:nth-child(6) label{display:inline-flex}#env tr.envrow>td:nth-child(5) button{margin:2px 4px 2px 0}}
 .card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px}.full{grid-column:1/-1}
 h2{font-size:16px;margin:0 0 8px}.chips{display:flex;flex-wrap:wrap;gap:6px}#est{flex-wrap:nowrap;overflow-x:auto;gap:4px;padding-bottom:2px;scrollbar-width:thin}#est .chip{flex:1 1 auto;white-space:nowrap;text-align:center;padding:4px 7px;font-size:12px}
 .chip{border:1px solid var(--bd);background:var(--in);color:var(--tx);border-radius:16px;padding:4px 10px;font-size:13px;cursor:pointer}.chip.on{background:var(--chipon);color:var(--chipontx)}

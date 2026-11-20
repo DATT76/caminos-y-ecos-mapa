@@ -91,27 +91,41 @@ html.mailwin header p{display:none}
 #trafsec .tfley i{display:inline-block;width:18px;height:3px;border-radius:2px;vertical-align:middle;margin-right:5px}
 #trafcustom{display:none}
 @media(max-width:600px){#trafsec .tfkpin{font-size:18px}}
+
+/* v31 · secciones destacadas */
+:root{--c-ed:#7a1f3d;--c-map:#7a1f3d;--c-ficha:#9a3a1a;--c-env:#a8650f;--c-mail:#2a6a9a;--c-list:#55772f;--c-ag:#6a4a9a;--c-tel:#23795a;--c-traf:#b04a2a;--c-proton:#4a568a;--c-exp:#6d625a;--sxw:5px}
+[data-theme=dark]{--c-ed:#ff9dbb;--c-map:#ff9dbb;--c-ficha:#f0a882;--c-env:#f0c27a;--c-mail:#7ab8e6;--c-list:#a8cc80;--c-ag:#bba4ec;--c-tel:#7ad0a8;--c-traf:#f2a27a;--c-proton:#a8b4e4;--c-exp:#b9b2aa}
+main{gap:18px}
+.sx-ed{--sx:var(--c-ed)}.sx-map{--sx:var(--c-map)}.sx-ficha{--sx:var(--c-ficha)}.sx-env{--sx:var(--c-env)}.sx-mail{--sx:var(--c-mail)}.sx-list{--sx:var(--c-list)}.sx-ag{--sx:var(--c-ag)}.sx-tel{--sx:var(--c-tel)}.sx-traf{--sx:var(--c-traf)}.sx-proton{--sx:var(--c-proton)}.sx-exp{--sx:var(--c-exp)}
+section.sx{border-left:var(--sxw) solid var(--sx);border-radius:12px;padding:14px 14px 14px 13px}
+section.sx>h2,section.sx #mailhead{color:var(--sx);font-size:17px;font-weight:700;padding-bottom:8px;margin-bottom:10px;border-bottom:2px solid var(--sx)}
+section.sx #mailhead h2{color:var(--sx);font-size:17px}
+nav#tabs a[href="#top"]{--tsx:var(--c-map)}nav#tabs a[href="#envsec"]{--tsx:var(--c-env)}nav#tabs a[href="#mailsec"]{--tsx:var(--c-mail)}nav#tabs a[href="#agsec"]{--tsx:var(--c-ag)}nav#tabs a[href="#telsec"]{--tsx:var(--c-tel)}nav#tabs a[href="#trafsec"]{--tsx:var(--c-traf)}
+nav#tabs a{box-shadow:inset 0 -3px 0 var(--tsx,var(--bd))}
+nav#tabs a.on{background:var(--tsx);border-color:var(--tsx);color:#fff;box-shadow:none}
+[data-theme=dark] nav#tabs a.on{color:#16181c}
+nav#tabs a.on .nb{background:#fff;color:var(--ac)}
 </style></head><body>
 <header><button id="thm" title="Modo claro / oscuro">🌙</button><h1>Mapa y agenda · Caminos y Ecos de La Rioja</h1><p>Seguimiento de ayuntamientos, aldeas y asociaciones · estado, ficha con borradores y agenda de la campaña. Funciona sin conexión; los datos se guardan en este navegador.</p></header>
 <nav id="tabs"><a href="#top">🗺️ Mapa y ficha</a><a href="#envsec">📨 Envíos</a><a href="#mailsec">📬 Correo<span id="mailnb" class="nb" style="display:none"></span></a><a href="#agsec">📅 Agenda</a><a href="#telsec">📇 Teléfonos</a><a href="#trafsec">📊 Tráfico</a></nav>
 <main id="top">
-<section class="card full"><div class="row" style="margin-top:0"><label>Edición<select id="edsel"></select></label><button id="ednew">Nueva edición</button>
+<section class="card full sx sx-ed" data-tab="top"><div class="row" style="margin-top:0"><label>Edición<select id="edsel"></select></label><button id="ednew">Nueva edición</button>
 <span id="edform" class="row" style="display:none;margin:0"><label>Año<input id="edyear" type="number" min="2020" max="2100" style="width:90px"></label><label>Estados<select id="edcopy"><option value="0">empezar todo en pendiente</option><option value="1">copiar estados de la edición actual</option></select></label><button class="p" id="edok">Crear</button></span>
 <label style="flex-direction:row;align-items:center;gap:4px"><input type="checkbox" id="elec">Elecciones municipales este año</label></div><h2>Estado de la campaña · <span id="edlab"></span></h2><div id="est" class="chips"></div></section>
-<section class="card"><h2>Mapa de La Rioja</h2><div id="ley" class="chips small"></div>
+<section class="card sx sx-map" data-tab="top"><h2>🗺️ Mapa de La Rioja</h2><div id="ley" class="chips small"></div>
 <svg id="map" viewBox="0 0 1000 685"></svg>
 <div class="row"><button id="add">Añadir pueblo en el mapa</button><span id="addf" style="display:none" class="row"><label>Nombre<input id="nn"></label><label>Tipo<select id="nt"><option value="A">Ayuntamiento</option><option value="S">Asociación</option><option value="R">Aldea</option></select></label><button class="p" id="sv">Guardar punto</button></span></div>
 <div class="small">Coordenadas geocodificadas con OpenStreetMap/Nominatim; contorno de La Rioja de OSM simplificado. ● ayuntamiento · ■ asociación · ◆ aldea · ★ referencia</div></section>
-<section class="card" id="ficha"></section>
-<section class="card full" id="envsec"><h2>Envíos · edición <span id="edlab3"></span></h2><div id="env"></div></section>
-<section class="card full" id="mailsec"><div class="row" id="mailhead" style="margin-top:0;justify-content:space-between;align-items:center"><h2 style="margin:0">📬 Correo · <span id="mailfrom">contacto@caminosyecosdelarioja.com</span></h2><span class="row" id="mailtools" style="margin:0"><button type="button" id="mpop">⧉ Abrir en ventana aparte</button><button type="button" id="mbackapp">Volver a la app</button></span></div><div id="mipadaviso" class="small" style="display:none">En iPad usa la vista dividida con Safari.</div><div id="mailbox"><p class="small">Cargando correo…</p></div></section>
-<section class="card full"><h2>Listado filtrable</h2><div class="row">
+<section class="card sx sx-ficha" id="ficha" data-tab="top"></section>
+<section class="card full sx sx-env" id="envsec" data-tab="envsec"><h2>📨 Envíos · edición <span id="edlab3"></span></h2><div id="env"></div></section>
+<section class="card full sx sx-mail" id="mailsec" data-tab="mailsec"><div class="row" id="mailhead" style="margin-top:0;justify-content:space-between;align-items:center"><h2 style="margin:0">📬 Correo · <span id="mailfrom">contacto@caminosyecosdelarioja.com</span></h2><span class="row" id="mailtools" style="margin:0"><button type="button" id="mpop">⧉ Abrir en ventana aparte</button><button type="button" id="mbackapp">Volver a la app</button></span></div><div id="mipadaviso" class="small" style="display:none">En iPad usa la vista dividida con Safari.</div><div id="mailbox"><p class="small">Cargando correo…</p></div></section>
+<section class="card full sx sx-list" data-tab="top"><h2>🔎 Listado filtrable</h2><div class="row">
 <label>Tipo<select id="ft"><option value="todos">todos</option><option value="A">Ayuntamientos</option><option value="S">Asociaciones</option><option value="R">Aldeas</option><option value="X">Referencia</option></select></label>
 <label>Comarca<select id="fc"></select></label><label>Buscar<input id="fq" placeholder="nombre o email"></label></div>
 <div style="overflow:auto"><table id="tab"></table></div></section>
-<section class="card full" id="agsec"><h2>Agenda · edición <span id="edlab2"></span></h2><h3 style="font-size:14px">Próximas fechas</h3><table id="ag"></table><h3 style="font-size:14px">Fases de la edición (editables)</h3><table id="fa"></table><div class="row"><button id="faadd">Añadir fase</button><button id="fagen">Regenerar fases según el año</button></div>
+<section class="card full sx sx-ag" id="agsec" data-tab="agsec"><h2>📅 Agenda · edición <span id="edlab2"></span></h2><h3 style="font-size:14px">Próximas fechas</h3><table id="ag"></table><h3 style="font-size:14px">Fases de la edición (editables)</h3><table id="fa"></table><div class="row"><button id="faadd">Añadir fase</button><button id="fagen">Regenerar fases según el año</button></div>
 </p></section>
-<section class="card full" id="telsec"><h2>📇 Agenda de teléfonos</h2>
+<section class="card full sx sx-tel" id="telsec" data-tab="telsec"><h2>📇 Agenda de teléfonos</h2>
 <p class="small">Contactos de ayuntamientos, venues, prensa y el resto del ciclo. Se guardan en este navegador, con el resto de datos de la app, y salen también en el CSV general de Exportar / importar.</p>
 <div class="row" style="margin-top:0">
 <label style="flex:2;min-width:200px">Buscar<input id="telq" placeholder="nombre, organización o teléfono"></label>
@@ -134,7 +148,7 @@ html.mailwin header p{display:none}
 <textarea id="telio" rows="4" placeholder="Aquí aparece el CSV de la agenda; pega aquí un CSV para importarlo."></textarea>
 <div id="telmsg" class="small"></div>
 </section>
-<section class="card full" id="trafsec">
+<section class="card full sx sx-traf" id="trafsec" data-tab="trafsec">
 <h2>📊 Tráfico de la web</h2>
 <p class="small">Visitas a caminosyecosdelarioja.com. Estadística propia sin cookies; la ubicación es aproximada (por la conexión).</p>
 <div class="row" style="margin-top:0">
@@ -154,11 +168,11 @@ html.mailwin header p{display:none}
 </div>
 <div id="trafbox"><p class="small">Elige un rango y pulsa Actualizar. Hace falta la sesión del correo.</p></div>
 </section>
-<section class="card full"><h2>Proton Mail como app de correo</h2><div class="small" style="font-size:13px">
+<section class="card full sx sx-proton" data-tab="mailsec"><h2>🔐 Proton Mail como app de correo</h2><div class="small" style="font-size:13px">
 <p><b>iPad / iPhone:</b> instala la app <b>Proton Mail</b> desde el App Store e inicia sesión. Luego ve a <b>Ajustes › Apps › Proton Mail › App de correo predeterminada</b> y elige Proton Mail (en versiones anteriores de iPadOS: <b>Ajustes › Proton Mail › App de correo predeterminada</b>). Si Proton Mail no aparece como opción, usa «Copiar texto» y pégalo en la app.</p>
 <p><b>Ordenador:</b> instala la app de escritorio <b>Proton Mail</b> (Windows/macOS). En <b>Windows</b>: Configuración › Aplicaciones › Aplicaciones predeterminadas › busca «MAILTO» y elige Proton Mail. En <b>macOS</b>: abre la app Mail › Ajustes › General › «Lector de correo predeterminado» y elige Proton Mail. Si usas Proton Mail solo en el navegador, puede que el enlace no lo abra: en ese caso usa «Copiar texto».</p>
 <p>El botón «Abrir en Proton / app de correo» solo abre un borrador: nada se envía hasta que pulses Enviar en tu correo. El botón «📤 Enviar desde la app» envía directamente desde una dirección del proyecto (director@ por defecto, porque los borradores van firmados por Daniel; también contacto@, promocion@, produccion@, suscripcion@ o info@; se elige en la confirmación y la firma del texto cambia con el buzón; sección Correo), siempre tras una confirmación.</p></div></section>
-<section class="card full"><h2>Exportar / importar</h2><div class="row"><button class="p" id="ex">Exportar CSV</button><button id="im">Importar CSV del cuadro</button><button id="rs">Restablecer todo</button></div>
+<section class="card full sx sx-exp"><h2>💾 Exportar / importar</h2><div class="row"><button class="p" id="ex">Exportar CSV</button><button id="im">Importar CSV del cuadro</button><button id="rs">Restablecer todo</button></div>
 <textarea id="io" rows="8" placeholder="Aquí aparece el CSV exportado; pega aquí un CSV para importarlo."></textarea><div id="msg"></div></section>
 </main>
 <div id="mdlg" role="dialog" aria-modal="true"><div class="box" id="mdlgb"></div></div>
@@ -253,7 +267,7 @@ $("map").querySelectorAll(".m").forEach(el=>el.addEventListener("click",ev=>{ev.
 function renderFicha(){const it=all()[sel]||DATA[97],r=rec(sel),E=emails(it,sel).map(x=>{const e=L_().edits[kk(sel,x[0])];const raw=e!=null?e:x[1];const tx=esBorradorFacebook(x[0],raw)?raw:asegurarAviso(raw);return e!=null?[x[0]+" (editado)",tx,x[0]]:[x[0],tx,x[0]];});if(ei>=E.length)ei=0;const av=avisos(it,sel);
 const lk=(it.lk||[]).map(k=>`<button data-k="${k}" class="lk">${esc(DATA[k].n)}</button>`).join(" ")||"—";
 const P=[["Tipo",TIPOS[it.t]||it.t],["Comarca · ronda",it.c+" · "+it.r],["Contacto",it.ct||"—"],["Web / redes",it.w||"—"],["Patrimonio / actividad",it.p||"—"],["Propuesta (pensamos en…)",(it.e&&it.e.d)||it.d||"—"],["Por qué encaja / notas",it.no||"—"],["Fuentes",it.fs||"—"]];
-$("ficha").innerHTML=`<h2>Ficha · ${esc(it.n)}</h2><dl>${P.map(p=>`<dt>${p[0]}</dt><dd>${esc(YA(p[1]))}</dd>`).join("")}<dt>Enlazados</dt><dd>${lk}</dd><dt>Historial</dt><dd>${hist(sel)}</dd><dt>Lotes</dt><dd>${L_().items.filter(x=>x.p===sel).map(x=>`<a data-lote="${x.d}">${esc(dayLabel(x.d))}</a> (${esc(x.l)}${L_().sent[kk(sel,x.l)]?" · enviado "+esc(L_().sent[kk(sel,x.l)]):""})`).join("<br>")||"—"}</dd></dl>`+(av.length?`<div class="warn"><b>Avisos:</b> ${av.map(esc).join(" · ")}</div>`:"")+
+$("ficha").innerHTML=`<h2>📍 Ficha · ${esc(it.n)}</h2><dl>${P.map(p=>`<dt>${p[0]}</dt><dd>${esc(YA(p[1]))}</dd>`).join("")}<dt>Enlazados</dt><dd>${lk}</dd><dt>Historial</dt><dd>${hist(sel)}</dd><dt>Lotes</dt><dd>${L_().items.filter(x=>x.p===sel).map(x=>`<a data-lote="${x.d}">${esc(dayLabel(x.d))}</a> (${esc(x.l)}${L_().sent[kk(sel,x.l)]?" · enviado "+esc(L_().sent[kk(sel,x.l)]):""})`).join("<br>")||"—"}</dd></dl>`+(av.length?`<div class="warn"><b>Avisos:</b> ${av.map(esc).join(" · ")}</div>`:"")+
 `<div class="row"><label>Estado<select id="f_st">${ESTADOS.map(s=>`<option ${s===r.st?"selected":""}>${s}</option>`).join("")}</select></label>
 <label>Espacio / tipo de concierto<select id="f_es">${ESPACIOS.map(s=>`<option value="${s}" ${s===r.es?"selected":""}>${s||"—"}</option>`).join("")}</select></label>
 <label>Fecha email enviado<input type="date" id="f_fe" value="${esc(r.fe)}"></label><label>Fecha seguimiento<input type="date" id="f_fs" value="${esc(r.fs)}"></label>
@@ -730,7 +744,11 @@ function tabY(){return window.pageYOffset||document.documentElement.scrollTop||d
 function tabScroll(id){const el=document.getElementById(id);if(!el)return;const dest=Math.max(0,Math.round(el.getBoundingClientRect().top+tabY()-tabBarH()));try{window.scrollTo(0,dest);}catch(e){}}
 function tabSetHash(hash){const dest=hash.charAt(0)==="#"?hash:("#"+hash);if((location.hash||"")===dest)return;try{history.replaceState(null,"",location.pathname+location.search+dest);}catch(e){}}
 function tabGo(hash){const raw=String(hash==null?(location.hash||""):hash);const href=raw.charAt(0)==="#"?raw:("#"+(raw||"top"));const id=tabTarget(href);const destHash=/^#correo\b/i.test(href)?"#correo":("#"+id);tabScroll(id);tabSetHash(destHash);try{requestAnimationFrame(function(){const el=document.getElementById(id);if(!el)return;const nav=$("tabs");const want=nav&&nav.offsetParent!==null?nav.getBoundingClientRect().bottom:0;if(Math.abs(el.getBoundingClientRect().top-want)>4)tabScroll(id);});}catch(e){}try{if(typeof mHashGo==="function")mHashGo(true);}catch(e){}}
-function tabBind(){const nav=$("tabs");if(!nav||nav.dataset.tabBound)return;nav.dataset.tabBound="1";nav.addEventListener("click",function(ev){const a=ev.target.closest&&ev.target.closest("a");if(!a||!nav.contains(a))return;const href=a.getAttribute("href")||"";if(href.charAt(0)!=="#")return;ev.preventDefault();try{ev.stopPropagation();}catch(e){}tabGo(href);});}
+function tabMark(id){const nav=$("tabs");if(!nav)return;const want="#"+id;nav.querySelectorAll("a").forEach(function(a){const on=a.getAttribute("href")===want;if(a.classList.contains("on")!==on)a.classList.toggle("on",on);});}
+var tabSpyQ=false,tabSpyCur="";function tabSpyRun(){tabSpyQ=false;const nav=$("tabs");if(!nav||nav.offsetParent===null)return;const lim=nav.getBoundingClientRect().bottom+48;const ss=document.querySelectorAll("section[data-tab]");let cur="top";for(let i=0;i<ss.length;i++){if(ss[i].getBoundingClientRect().top<=lim)cur=ss[i].getAttribute("data-tab");else break;}if(cur!==tabSpyCur){tabSpyCur=cur;tabMark(cur);}}
+function tabSpy(){if(tabSpyQ)return;tabSpyQ=true;try{requestAnimationFrame(tabSpyRun);}catch(e){tabSpyRun();}}
+try{window.addEventListener("scroll",tabSpy,{passive:true});window.addEventListener("resize",tabSpy,{passive:true});}catch(e){}
+function tabBind(){const nav=$("tabs");if(!nav||nav.dataset.tabBound)return;nav.dataset.tabBound="1";nav.addEventListener("click",function(ev){const a=ev.target.closest&&ev.target.closest("a");if(!a||!nav.contains(a))return;const href=a.getAttribute("href")||"";if(href.charAt(0)!=="#")return;ev.preventDefault();try{ev.stopPropagation();}catch(e){}tabGo(href);try{const t=tabTarget(href);tabSpyCur=t==="mailsec"||t==="envsec"||t==="agsec"||t==="telsec"||t==="trafsec"?t:"top";tabMark(tabSpyCur);}catch(e){}});}
 function mHashGo(noscr){const h=location.hash||"";if((/^#correo\b/i.test(h)||/^#mailsec\b/i.test(h))&&!noscr){if(typeof tabScroll==="function")tabScroll("mailsec");else mGoMail(false);}if(typeof tfHashGo==="function")tfHashGo();}
 try{window.addEventListener("hashchange",function(){mHashGo();});tabBind();}catch(e){}
 setThemeBtn();tfBind();tfApplyRange();
@@ -738,6 +756,6 @@ if(MAILWIN){document.title="Correo · Caminos y Ecos";document.documentElement.c
 else{applySeeds();renderAll(true);if(migrated)msg("Datos anteriores migrados a la edición 2027.");}
 if($("mpop"))$("mpop").onclick=mOpenMailWin;if($("mbackapp"))$("mbackapp").onclick=mBackToApp;mListen();
 mRender();mInit();
-try{if(location.hash){if(typeof tabGo==="function")tabGo(location.hash);else mHashGo();}}catch(e){}
+try{if(location.hash){if(typeof tabGo==="function")tabGo(location.hash);else mHashGo();}}catch(e){}try{tabSpy();}catch(e){}
 if("serviceWorker" in navigator&&location.protocol!=="file:"){navigator.serviceWorker.register("sw.js",{updateViaCache:"none"}).then(g=>g.update());let rl=false;navigator.serviceWorker.addEventListener("controllerchange",()=>{if(rl)return;rl=true;location.reload();});}
 </script></body></html>

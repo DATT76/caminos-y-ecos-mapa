@@ -179,3 +179,8 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - **Exportar CSV** del rango elegido. Aviso: «Estadística propia sin cookies; la ubicación es aproximada (por la conexión).»
 - Usa la misma sesión del correo que el resto de la app (`GET /api/stats?from=&to=`). Si el contador aún no está en el servidor, se muestra: «Aún no hay datos: el contador se activará en la web en breve», sin interrumpir el resto.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
+
+## Séptimo buzón colaboradores@ · versión celr-v41
+- Se añade **Colaboradores** (colaboradores@caminosyecosdelarioja.com), junto a Contacto, Director, Promoción, Producción, Suscripción e Info. El selector, el «De» al redactar o responder, los ajustes, las etiquetas, los colores, los avisos (push y Proton) y las respuestas automáticas de primera vez cubren los siete. En **Envíos**, el remitente por defecto sigue siendo Director.
+- Firma predeterminada de Colaboradores: Daniel Torres Tear · colaboradores@caminosyecosdelarioja.com · 621 38 83 46. El color del buzón es un verde agua, distinto de los demás.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

@@ -180,6 +180,10 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - Usa la misma sesión del correo que el resto de la app (`GET /api/stats?from=&to=`). Si el contador aún no está en el servidor, se muestra: «Aún no hay datos: el contador se activará en la web en breve», sin interrumpir el resto.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
 
+## Orden y fechas de la lista de correos · versión celr-v43
+- Encima de la lista hay pestañas **Más nuevos** (por defecto) y **Más antiguos**, y un filtro **Desde** / **Hasta** con botón **Limpiar**. Sirve en todos los buzones, en la vista unificada, en las carpetas y en la búsqueda. La elección de orden se recuerda en este dispositivo.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos. Si no aparece de inmediato, cierra la app del todo y vuelve a abrirla, o pulsa «Refrescar».
+
 ## Lista de correos, del más nuevo al más antiguo · versión celr-v42
 - En todos los buzones, en la vista unificada, en las carpetas y en los resultados de la búsqueda, las conversaciones de la lista aparecen ahora de más nueva a más antigua (por fecha de recepción; si empatan, por identificador).
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.

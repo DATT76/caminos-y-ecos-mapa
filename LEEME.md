@@ -180,6 +180,10 @@ Envíos del 11 al 22 de enero de 2027; llamadas de seguimiento desde el 25 de en
 - Usa la misma sesión del correo que el resto de la app (`GET /api/stats?from=&to=`). Si el contador aún no está en el servidor, se muestra: «Aún no hay datos: el contador se activará en la web en breve», sin interrumpir el resto.
 - Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos.
 
+## Hilo del más reciente al más antiguo · versión celr-v45
+- Al abrir un correo, los mensajes del hilo se ven del último recibido (arriba) al más antiguo. La caja de respuesta rápida queda arriba, junto al más reciente, y sigue respondiendo a ese último mensaje.
+- Abre la app instalada con conexión para recibir la actualización; no borres la app ni sus datos. Si no aparece de inmediato, cierra la app del todo y vuelve a abrirla.
+
 ## Correo: escribir sin saltos y lista en más nuevos primero · versión celr-v44
 - Al redactar o responder en el iPhone, el texto ya no se oculta: el tamaño de letra evita el zoom, el teclado no encoge el diseño y el cursor se mantiene a la vista. La app no se recarga sola mientras escribes.
 - «Más nuevos» queda como orden por defecto y la lista ordena de verdad por la fecha más reciente (también si el servidor las manda al revés o las fechas vienen en formatos distintos).
